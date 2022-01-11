@@ -41,8 +41,8 @@ def check_freq_input_is_number(input):
 
 # Input arguments
 parser.add_argument('--FREQ', metavar='FREQ', required=True, type=float, help='Sets the clock frequency.', default=0)
-parser.add_argument('--FREQ_UNIT', metavar='FREQ_UNIT', required=True, type=str, help='Sets the clock frequency unit (GHz, MHz, kHz, Hz)', default='NONE')
-parser.add_argument('--PERIOD_UNIT', metavar='PERIOD_UNIT', required=True, type=str, help='Sets the period unit (ps, ns, ms, s).', default='NONE')
+parser.add_argument('--FREQ_UNIT', metavar='FREQ_UNIT', required=False, type=str, help='Sets the clock frequency unit (GHz, MHz, kHz, Hz) (Default: MHz)', default='MHz')
+parser.add_argument('--PERIOD_UNIT', metavar='PERIOD_UNIT', required=False, type=str, help='Sets the period unit (ps, ns, ms, s) (Default: ns).', default='ns')
 
 args = parser.parse_args()
 
